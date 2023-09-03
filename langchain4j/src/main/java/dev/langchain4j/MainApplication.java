@@ -1,0 +1,15 @@
+package dev.langchain4j;
+
+import org.jsoup.Jsoup;
+
+import java.io.IOException;
+
+public class MainApplication {
+    public static void main(String[] args) throws IOException {
+        String url = "https://raw.githubusercontent.com/langchain4j/langchain4j/main/langchain4j/src/test/resources/test-file-utf8.txt";
+
+        org.jsoup.nodes.Document jsoupDocument = Jsoup.connect("https://mail-attachment.googleusercontent.com/attachment/u/2/?ui=2&ik=163e2dbabf&attid=0.1&permmsgid=msg-f:1775540823576213091&th=18a3fcf8c976f663&view=att&disp=safe&saddbat=ANGjdJ-KqFv-IOv8kY41-yWPXSmRlO4Yez20N1zZh5Mt4rh97F6onfhRrsZ9QsRn-7dimZ0m1qDkbIowMzslgXrCgKNvVwRnvqtAmX7aq0dgToHHZEhGCnnzFpzbDnfm3xw151qD6RIm8HdLokDmfnMRFj1qpmHtEsqhjukGi5-kp8QN6hh4yvxEkWoP5ztR2-F9AvREkQHbZymBGB3D7Rn50TIvSysDMZ9jrDmp2mNwJkGo_jRFK5Kb8FmedB5PCzJ565M17fb0bxKbK0ZYd8Qcz8ijVktl3zkJ483QW6BftOpVwtBQfB2Lu6ehiK4Syyihkc-Dh1b-l0IcCuWKIBrXEjIdLyIO9o1umKAbbBHRlxQ4MfiCaJ3U19kMQx5FsZjdo65FHObxckqTRq5gNyorjlztgsmtsm7ERBJIpFixvMvQieJcFyr-sWkeY7KdSrMvL0ifHYckmMJy8PsmNkv5t4OsL4wZVvgG6CkUO2mDY18VbYRSHhrK4Dl6WBn_TTDSrGiZHi-kK8WbgZ6NgntDAKQUaoUPy2di5Y3qF8pJj0x6wuhyxXL_qw5p-LAVjGL8ALcBCV1b_l-KQH-CozezagxKGkhffLw1NgwZtdwXh1LWUEHaoQ9dvHIwDZOngRxmK4obCavzqmpiGz1hB_0iJBP_eoXM9ohbnMb7sGKwY8eqO23Bw-yoRzBiG65kKUra0gQErM9pvaIN8pY5I0yU2fgVJcYuNUkvXfnbIc1s7U8LBpQHwWBLtWC8YDHgNruYT6wZA5P7C-Wf84C9M0wAlm7GiDr0EH_Yw-4SWhwJOSUxqErSehgeR6xntzH0d17WPNvoSj3XjBxrd-DcFqhPUaf3RgxJ5g2SA5RDCLFLtRhnisatpbpBnqsyEoAP5p2iyogoVVBhBSMXt_2GPhrBkIzNw93_OHALHiRbkWCubAhojoyf2vG5kCgN2GVpWPjj40Ym5yayVfXyVtZ1I_34kaOwl6Tls2Vozf-lCqHBeeivm1Qcsv8ewAlCE4xhN1jusUz9nupAiWzVABZksNLkQ3TujYpwpZ9Nuqr9e_s0vSSen5fjkD0MPRAiGSB3A78oVfln2VvW9j55zxIEjaKSl0RBDepM_VCeNbkaHI-rXSBC7uVgktAZd4zg7rQ").get();
+
+        System.out.println(jsoupDocument);
+    }
+}
